@@ -1,0 +1,99 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+<meta charset="utf-8">
+    <title>Sabiha's Boutique</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+  <!-- Favicon -->
+  <link href="../img/favicon.png" rel="icon">
+  <link href="assets/css/login.css" rel="stylesheet">
+
+ <!-- Customized Bootstrap Stylesheet -->
+ <link href="css/style.css" rel="stylesheet">
+
+</head>
+<body>
+
+<div class="container" id="container">
+    <div class="form-container sign-up-container">
+        <form action="#">
+            <h1>Create Account</h1>
+            <div class="social-container">
+                <a href="https://www.facebook.com/?_rdc=2&_rdr" class="social" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/_sabihasboutique/" class="social" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/channel/UCl_195ZsEOQdWGrRRUISRdg" class="social" target="_blank"><i class="fab fa-youtube"></i></a>
+            </div>
+            <span>or use your email for registration</span>
+            <input type="text" placeholder="Name" />
+            <input type="number" placeholder="phone number" />
+            <input type="date" placeholder="Date of Birth" />
+	    <input type="email" placeholder="Email" />
+            <input type="password" placeholder="Password" />
+            <button>Sign Up</button>
+        </form>
+    </div>
+    <div class="form-container sign-in-container">
+	
+        <form action="#">
+            <h1>Log In</h1>
+            <div class="social-container">
+                <a href="https://www.facebook.com/profile.php?id=100086459358196" class="social" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/_sabihasboutique/" class="social" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/channel/UCl_195ZsEOQdWGrRRUISRdg" class="social" target="_blank"><i class="fab fa-youtube"></i></a> 
+            </div>
+            <span>or use your account</span>
+            <input type="email" placeholder="Email" />
+            <input type="password" placeholder="Password" />
+            <a href="#">Forgot your password?</a>
+            <button>Log In</button>
+        </form>
+    </div>
+    <div class="overlay-container">
+        <div class="overlay">
+            <div class="overlay-panel overlay-left">
+                <h1>Welcome Back!</h1>
+                <p>To keep connected with us please login with your personal info</p>
+                <button class="ghost" id="signIn">Log In</button>
+            </div>
+            <div class="overlay-panel overlay-right">
+                <h1>NEW CUSTOMERS</h1>
+                <p>Creating an account has many benefits:check out faster,keep more than one address,track orders and more</p>
+                <button class="ghost" id="signUp">Create Account</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    
+	<p>
+	
+	  We are specialized in Manufacturing High-Quality Chiffon,Lawn,Seasonal Embrodered collections,Latest Fashion and Creative styling and cuts of each dress to make the trendy Style. We also export Pakistani dresses stiched, custom-made sizes as per the designs all over the world.
+	</p>
+
+</footer>
+
+<script>
+    const signUpButton = document.getElementById('signUp');
+    const signInButton = document.getElementById('signIn');
+    const container = document.getElementById('container');
+
+    signUpButton.addEventListener('click', () => {
+        container.classList.add("right-panel-active");
+
+
+    });
+
+    signInButton.addEventListener('click', () => {
+        container.classList.remove("right-panel-active");
+    });
+</script>
+
+
+ 
+</body>
+</html>
+
